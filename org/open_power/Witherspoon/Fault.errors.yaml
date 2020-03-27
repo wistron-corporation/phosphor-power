@@ -26,12 +26,12 @@
 
 - name: ErrorCode0
   description: Read CPLD-register fail
-  
+
 - name: ErrorCode1
-  description: CPLD's error reason is PSU1_PGOOD fail
+  description: CPLD's error reason is PSU0_PGOOD fail
 
 - name: ErrorCode2
-  description: CPLD's error reason is PSU0_PGOOD fail
+  description: CPLD's error reason is PSU1_PGOOD fail
 
 - name: ErrorCode3
   description: CPLD's error reason is 240Va_Fault_A fail
