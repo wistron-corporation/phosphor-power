@@ -122,7 +122,7 @@ class MihawkCPLD : public Device
     bool errorcodeMask;
 
     enum class ErrorCode : int
-	{
+    {
         /**
          * All of powerOnErrorcode are the definition of error-code
          * which are read on CPLD-error-code-register.
@@ -348,7 +348,7 @@ class MihawkCPLD : public Device
          * PSU0PSU1_PGOOD fail.
          */
         ErrorCode_36 = 170
-	};
+    };
 };
 
 } // namespace power

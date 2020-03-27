@@ -62,10 +62,8 @@ void MihawkCPLD::onFailure()
     // and report the error log event.
     if (poweronError)
     {
-        //int errorcode;
-		ErrorCode code;
-        //errorcode = readFromCPLDErrorCode(StatusReg_2);
-		code = static_cast<ErrorCode>(readFromCPLDErrorCode(StatusReg_2));
+        ErrorCode code;
+        code = static_cast<ErrorCode>(readFromCPLDErrorCode(StatusReg_2));
 
         switch (code)
         {
@@ -208,10 +206,7 @@ void MihawkCPLD::analyze()
         // report the error event.
         if (powerreadyError)
         {
-            //int errorcode;
-            //errorcode = readFromCPLDErrorCode(StatusReg_3);
-			ErrorCode code;
-			//int errorcode;
+            ErrorCode code;
             code = static_cast<ErrorCode>(readFromCPLDErrorCode(StatusReg_3));
 
             if (!errorcodeMask)
