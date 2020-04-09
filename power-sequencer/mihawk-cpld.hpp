@@ -135,13 +135,13 @@ class MihawkCPLD : public Device
 
         /**
          * The definition of error-code:
-         * PSU0_PGOOD fail.
+         * PSU1_PGOOD fail.
          */
         _1 = 1,
 
         /**
          * The definition of error-code:
-         * PSU1_PGOOD fail.
+         * PSU0_PGOOD fail.
          */
         _2 = 2,
 
